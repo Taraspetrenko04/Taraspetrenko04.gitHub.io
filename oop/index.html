@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step Project OOP</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo"></div>
+            <div class="header__title">
+                <h1 class="header__text">Appointment</h1>
+            </div>
+            <div class="header__button">
+                <button class="button">create +</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION -->
+    <section class="section">
+
+        <div class="section__content">
+            <div class="section-image"></div>
+            <div class="section__store">
+            </div>
+        </div>
+        <!-- Modal window -->
+        <div class="modal">
+
+            <div class="modal__content">
+
+                <div class="modal__close"></div>
+                <form action="#">
+                    <select name="doctor" class="modal__select">
+                        <!-- <option value="">COOSE A DOCTOR</option> -->
+                        <option value="cardiologist">CARDIOLOGIST</option>
+                        <option value="dentist">DENTIST</option>
+                        <option value="therapeutist">THERAPEUTIST</option>
+                    </select>
+
+                    <div class="modal__input" id="modal__input">
+                        <input class="purpose" name="cardiologist dentist therapeutist" type="text" size="40"
+                            placeholder="Visit purpose" value="Head ache">
+                        <!-- <input name="cardiologist" type="text" size="40" placeholder="Common blood preasure" value="">
+                        <input name="cardiologist" type="text" size="40" placeholder="Body weight" value="">
+                        <input name="cardiologist" type="text" size="40" placeholder="Cardio diseases" value=""> -->
+                        <input class="age" name="cardiologist therapeutist" type="number" size="40" value="42">
+                        <input class="name" name="cardiologist therapeutist dentist" type="text" size="40"
+                            placeholder="Full name" value="Mike Tyson">
+                        <input class="lastVisitDate" name="dentist" class="hide" type="text" size="40"
+                            placeholder="Last visist date" value="">
+
+                        <textarea class="modal__textaria" type="text" maxlength="400"
+                            placeholder="Write comment.."></textarea>
+                    </div>
+
+                    <button type="button" class="modal__submit">Submit</button>
+
+                </form>
+
+
+                <!-- <button class="modal__submit button hide">Create Card</button> -->
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
