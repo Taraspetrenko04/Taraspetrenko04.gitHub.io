@@ -1,0 +1,225 @@
+
+
+.slide-item {
+   max-width: 90px;
+        margin: 10px 10px;
+    
+}
+/*.slide-item..slick-slide.slick-active{
+    padding-right: 10px;
+     padding-left: 10px;
+    width: 60px
+}*/
+
+
+.your-class {
+   margin: 0 auto;
+    width: 450px;
+}
+
+.slider {
+    width: 100%;
+    background-image: url(../img/section-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 98px;
+    
+}
+
+.your-class-two {
+    width: 1000px;
+    margin: 50px auto;
+}
+
+.slide {
+    
+}
+
+.slide-item-two {
+   margin: 10px 10px;
+    cursor: pointer;
+    
+}
+
+.text-slider-one {
+    font-family: 'Montserrat', sans-serif;
+    color:  #18cfab;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.image-slider-two {
+    border: 3px solid #18cfab;
+    box-shadow: 0 0 0 7px rgba(31, 218, 181, 0.2);
+    border-radius: 75px;
+    box-sizing: border-box;
+    width: 150px;
+    height 150px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.image-slider-one {
+    border: 1px solid #18cfab;
+    box-shadow: 0 0 0 3px rgba(31, 218, 181, 0.2);
+    width: 50px;
+    /*height: 50px;*/
+    border-radius: 25px;
+    box-sizing: border-box;
+    height: auto;
+    /*height: auto;
+     width: 100%;
+     height 100%;*/
+}
+
+.text-slider-two {
+    font-family: 'Montserrat', sans-serif;
+    color:  #bbbbbb;
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+/*------Arrows______________------------------------------*/
+.slick-prev:before
+{
+    content: '__';
+    width: 28px;
+    height: 28px;
+    /*border: 1px solid #ffff;*/
+    box-sizing: border-box;
+    background-image: url(../img/Arrow_black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 15px;
+   
+    
+    
+}
+.slick-prev:hover{
+    background-color: aqua;
+    background-size: cover;
+    
+}
+
+[dir='rtl'] .slick-prev:before
+{
+    content: '__';
+    font-size: 0px;
+    width: 28px;
+    height: 28px;
+    /*border: 1px solid #ffff;*/
+    box-sizing: border-box;
+    background-image: url(../img/Arrow_black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    
+    
+}
+.slick-prev:hover{
+    background-color: aqua;
+    background-size: cover;
+    
+}
+
+.slick-next:before{
+    content: '__';
+    width: 28px;
+    height: 28px;
+    /*border: 1px solid #ffff;*/
+    box-sizing: border-box;
+    background-image: url(../img/Arrow_black_180.png);
+    image-orientation: 180;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 15px;
+}
+.slick-next:hover{
+    background-color: aqua;
+    background-size: cover;
+    
+}
+
+[dir='rtl'] .slick-next:before{
+    content: '__';
+    width: 28px;
+    height: 28px;
+    /*border: 1px solid #ffff;*/
+    box-sizing: border-box;
+    background-image: url(../img/Arrow_black_180.png);
+    image-orientation: 180;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    
+}
+.slick-next:hover{
+    background-color: aqua;
+    background-size: cover;
+   
+}
+
+/*_______________________Button_____________________*/
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: ;
+    outline: none;
+    /*background: transparent;*/
+    background-image: url(../img/Arrow_white.png);
+    background-position: center;
+}
+
+.slick-dots li button:before
+{
+    
+    font-size: 0px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 28px;
+    height: 28px;
+
+    content: '';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+    background-image: url(../img/Arrow_white.png);
+    background-position: center;
+}
+.text-slider-three {
+    font-family: 'Montserrat', sans-serif;
+    color:  #bbbbbb;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
+}
