@@ -3,6 +3,7 @@
 @media all and (min-width : 240px) {
     .header{
         width: 100%;
+        position: fixed;
         
 
     }
@@ -103,7 +104,7 @@
         width: 100%;
         z-index: -2;
         background-color: rgb(230, 230, 230);
-        transition: all 700ms;
+        transition: all 400ms;
     }
     .active{
         top: 92px;
@@ -118,12 +119,14 @@
     .menu__link{
         
     }
-
+    .navbar__lupefield{
+        width: 100px;
+    }
     
     .navbar__search{
         width: 35px;
         height: 35px;
-        background-image: url(../img/lupe.png);
+        background-image: url(../img/Lupe.png);
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -139,6 +142,35 @@
     .hide{
         display: none;
     }
+
+    /* Modal SingIn Registration */
+    .modal{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/modal_background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.85;
+        bottom: -100%;
+        transition: all 1000ms;
+
+    }
+
+    .modal--active{
+        bottom: 0;
+    }
+
+    .modal__items{
+        width: 80%;
+        height: 300px;
+        margin: 0 10%;
+        background-color: aliceblue;
+        border-radius: 10px;
+    }
+
 
 }
 /* 640-959 */

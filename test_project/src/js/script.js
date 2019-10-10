@@ -30,4 +30,10 @@ document.getElementsByClassName('navbar__input')[0].addEventListener('blur', fun
     document.getElementsByClassName('navbar__field')[0].classList.toggle('hide');
 })
 
+document.querySelector('.menu__item').addEventListener('click', function(event) {
+    let target = event.target;
+    console.log(target.className);
+    document.querySelector('.modal').classList.add('modal--active');
+})
+
 }//end
