@@ -1,9 +1,13 @@
-
+a{
+    text-decoration: none;
+    color: lightblue;
+}
 /* 240 */
 @media all and (min-width : 240px) {
     .header{
         width: 100%;
         position: fixed;
+        text-transform: uppercase;
         
 
     }
@@ -99,11 +103,13 @@
 
     .menu{
         /* top: 42%; */
-        top: -100%;
+        top: -500px;
         position: absolute;
         width: 100%;
         z-index: -2;
-        background-color: rgb(230, 230, 230);
+        background-image: url(../img/menu_background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
         transition: all 400ms;
     }
     .active{
@@ -113,11 +119,19 @@
         
     }
     .menu__item{
-        padding: 5px 15px;
-        border: 1px solid lightblue;    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        height: 75px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        text-decoration: none;
     }
     .menu__link{
-        
+        display: inline-block;
     }
     .navbar__lupefield{
         width: 100px;
@@ -153,7 +167,6 @@
         background-image: url(../img/modal_background.jpg);
         background-size: cover;
         background-repeat: no-repeat;
-        opacity: 0.85;
         bottom: -100%;
         transition: all 1000ms;
 
@@ -165,11 +178,63 @@
 
     .modal__items{
         width: 80%;
-        height: 300px;
+        /* height: 300px; */
         margin: 0 10%;
         background-color: aliceblue;
         border-radius: 10px;
+        opacity: 1;
     }
+
+    .modal__sing-in{
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .modal__input{
+        /* display: inline-block; */
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        height: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    
+    .modal__button{
+        height: 40px;
+        margin-top: 7px;
+        /* margin-bottom: 20px; */
+        background-color: rgb(9, 192, 79);
+        color: #ffff;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .red{
+        background-color: rgb(202, 53, 103);
+    }
+    .orange{
+        background-color: rgb(179, 105, 20);
+    }
+    .modal__cross{
+        /* background-image: url(../img/cross_red.png);
+        height: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        margin: auto; */
+        
+        
+    }
+
 
 
 }

@@ -30,10 +30,30 @@ document.getElementsByClassName('navbar__input')[0].addEventListener('blur', fun
     document.getElementsByClassName('navbar__field')[0].classList.toggle('hide');
 })
 
-document.querySelector('.menu__item').addEventListener('click', function(event) {
+document.querySelector('.sing-in').addEventListener('click', function(event) {
     let target = event.target;
     console.log(target.className);
-    document.querySelector('.modal').classList.add('modal--active');
+    addModalActive ()
+    
+    
 })
+
+document.querySelector('.close').addEventListener('click', function(event) {
+    let target = event.target;
+    console.log(target.className);
+    removeModalActive ()
+    document.querySelector('.navbar__burger').classList.toggle('active');
+    document.querySelector('.menu').classList.toggle('active');
+    
+})
+
+
+function addModalActive () {
+    document.querySelector('.modal').classList.add('modal--active');
+}
+
+function removeModalActive () {
+    document.querySelector('.modal').classList.remove('modal--active');
+}
 
 }//end
